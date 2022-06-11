@@ -31,6 +31,7 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.2
   audioplayers: ^0.20.1
+  animated_splash_screen: ^1.2.0
 
 dev_dependencies:
   flutter_test:
@@ -56,6 +57,7 @@ flutter_icons:
 flutter:
   assets:
     - assets/images/
+    - assets/
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
