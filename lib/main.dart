@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
-import 'package:spotify_api_app/screens/app.dart';
+import 'login/login_main.dart';
 
 void main(){
   runApp( MaterialApp(
@@ -11,7 +11,7 @@ void main(){
             duration: 3000,
             splash: 'assets/icon.png',
             splashIconSize: double.infinity,
-            nextScreen: MyApp(),
+            nextScreen: MyLoginApp(),
             splashTransition: SplashTransition.scaleTransition,
           ) 
   ));
