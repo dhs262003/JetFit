@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "235573750090",
-    "project_id": "sample1-5d631",
-    "storage_bucket": "sample1-5d631.appspot.com"
+    "project_number": "410819479843",
+    "project_id": "jetfitdb-7feae",
+    "storage_bucket": "jetfitdb-7feae.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:235573750090:android:a499c0cb322b0305fcf9b3",
+        "mobilesdk_app_id": "1:410819479843:android:8570e456142de00f276496",
         "android_client_info": {
-          "package_name": "com.example.email_password_login"
+          "package_name": "com.example.spotify_api_app"
         }
       },
       "oauth_client": [
         {
-          "client_id": "235573750090-4t06vaqbkqp6i73049tsa3hqnrmqrf3n.apps.googleusercontent.com",
+          "client_id": "410819479843-7q2ap1vvv2lmpkk218n4jk15c52lr8f1.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBTVE7O-VNXEFYU2sjZ6urUsvM1vJtEkY4"
+          "current_key": "AIzaSyBG3xjZSI28hIqn-GYEeJkeMc2eEPUwQF0"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "235573750090-4t06vaqbkqp6i73049tsa3hqnrmqrf3n.apps.googleusercontent.com",
+              "client_id": "410819479843-7q2ap1vvv2lmpkk218n4jk15c52lr8f1.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
