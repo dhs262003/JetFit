@@ -1,9 +1,10 @@
 // ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
 import 'package:spotify_api_app/food/foods.dart';
-import 'package:spotify_api_app/screens/home_page.dart';
+
 import 'package:spotify_api_app/screens/search.dart';
 import 'package:spotify_api_app/timer/jetfit_timer.dart';
+import '../homePage/homemain.dart';
 import '../models/music.dart';
 import 'home.dart';
 import 'package:audioplayers/audioplayers.dart';
@@ -59,7 +60,8 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-    Tabs = [HomePage(), FoodApp(), JetFitTimer(), Home(createMiniPlayer), AboutUs()];
+    // Tabs = [HomePage(), FoodApp(), JetFitTimer(), Home(createMiniPlayer), AboutUs()];HomeApp()
+    Tabs = [HomeApp(), FoodApp(), JetFitTimer(), Home(createMiniPlayer), AboutUs()];
   }
 
   @override
