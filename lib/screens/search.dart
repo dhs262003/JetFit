@@ -15,7 +15,8 @@ class AboutUs extends StatelessWidget {
                 Row(//Arya
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Image.network('https://drive.google.com/uc?export=view&id=1RB0yajZJRxgSxnxAy_spMBjJMl6LgA4u', height: 250,),
+                    // Image.network('https://drive.google.com/uc?export=view&id=1RB0yajZJRxgSxnxAy_spMBjJMl6LgA4u', height: 250,),
+                    Image.network('https://drive.google.com/uc?export=view&id=1_0aOvHHoFIiwxb5-6TwNBySOAfllnm9m', height: 250,),
                   ],
                 ),
                 SizedBox(height: 15,),
@@ -26,7 +27,8 @@ class AboutUs extends StatelessWidget {
                 Row(//Dhruv
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Image.network('https://drive.google.com/uc?export=view&id=1QAO-SPNppmUzugFd4fO2CYqswqBpf9O6', height: 250,),
+                    // Image.network('https://drive.google.com/uc?export=view&id=1QAO-SPNppmUzugFd4fO2CYqswqBpf9O6', height: 250,),
+                    Image.network('https://drive.google.com/uc?export=view&id=1AbijJsQ7YBzDJW0lSN5sbU5O3CZJQyOI', height: 250,),
                   ],
                 ),
                 SizedBox(height: 15,),
@@ -37,7 +39,8 @@ class AboutUs extends StatelessWidget {
                 Row(//Ansh
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Image.network('https://drive.google.com/uc?export=view&id=1map8_StmqEsrM6ytJA12lpCIb6Kaau_h', height: 250,),
+                    // Image.network('https://drive.google.com/uc?export=view&id=1map8_StmqEsrM6ytJA12lpCIb6Kaau_h', height: 250,),
+                    Image.network('https://drive.google.com/uc?export=view&id=1tjPeWoi1ScFvatuiJAKOJaioC6NZBU8g', height: 250,),
                   ],
                 ),
                 SizedBox(height: 15,),
