@@ -63,6 +63,8 @@ void addLaps(){
   setState(() {
     laps.add(lap);
   });
+  reset();
+  start();
 }
 
 //creating timer function
