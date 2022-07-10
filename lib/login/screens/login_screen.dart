@@ -1,3 +1,4 @@
+import 'package:spotify_api_app/homePage/core.dart';
 import 'package:spotify_api_app/screens/app.dart';
 
 import 'home_screen.dart';
@@ -52,7 +53,7 @@ class _LoginScreenState extends State<LoginScreen> {
         textInputAction: TextInputAction.next,
         style: TextStyle(color: Colors.white),
         decoration: InputDecoration(
-          prefixIcon: Icon(Icons.mail, color: kFirstColor),
+          prefixIcon: Icon(Icons.mail, color: Color(0xFF00aaff)),
           contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
           hintText: "Email",
           hintStyle: TextStyle(color: Colors.white54),
@@ -61,7 +62,7 @@ class _LoginScreenState extends State<LoginScreen> {
           ),
           enabledBorder: const OutlineInputBorder(
       // width: 0.0 produces a thin "hairline" border
-          borderSide: const BorderSide(color: kFirstColor, width: 0.0),
+          borderSide: const BorderSide(color: Color(0xFF00aaff), width: 0.0),
           ),
         ));
 
@@ -86,7 +87,7 @@ class _LoginScreenState extends State<LoginScreen> {
         textInputAction: TextInputAction.done,
         style: TextStyle(color: Colors.white),
         decoration: InputDecoration(
-          prefixIcon: Icon(Icons.vpn_key,color: kFirstColor),
+          prefixIcon: Icon(Icons.vpn_key,color: Color(0xFF00aaff)),
           contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
           hintText: "Password",
           hintStyle: TextStyle(color: Colors.white54),
@@ -95,14 +96,14 @@ class _LoginScreenState extends State<LoginScreen> {
           ),
           enabledBorder: const OutlineInputBorder(
       // width: 0.0 produces a thin "hairline" border
-          borderSide: const BorderSide(color: kFirstColor, width: 0.0),
+          borderSide: const BorderSide(color: Color(0xFF00aaff), width: 0.0),
           ),
         ));
 
     final loginButton = Material(
       elevation: 5,
       borderRadius: BorderRadius.circular(30),
-      color: kFirstColor,
+      color: Color(0xFF00aaff),
       child: MaterialButton(
           padding: EdgeInsets.fromLTRB(20, 15, 20, 15),
           minWidth: MediaQuery.of(context).size.width,
@@ -118,12 +119,12 @@ class _LoginScreenState extends State<LoginScreen> {
     );
 
     return Scaffold(
-      backgroundColor: kThirdColor,
+      backgroundColor: Color(0xFF131429),
       body: Padding(
         padding: const EdgeInsets.fromLTRB(12, 100, 12, 0),
         child: SingleChildScrollView(
           child: Container(
-            color: kSecondColor,
+            color: Color(0xFF232441),
             child: Padding(
               padding: const EdgeInsets.all(36.0),
               child: Form(
@@ -137,7 +138,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       backgroundColor: Colors.redAccent,
                       radius: 107,
                       child: CircleAvatar(
-                        backgroundColor: kSecondColor,
+                        backgroundColor: Color(0xFF232441),
                         radius: 105,
                         child: CircleAvatar(
                             radius: 100, // Image radius
@@ -215,7 +216,7 @@ class _LoginScreenState extends State<LoginScreen> {
             .then((uid) => {
                   Fluttertoast.showToast(msg: "Login Successful"),
                   Navigator.of(context).pushReplacement(
-                      MaterialPageRoute(builder: (context) => MyApp())),
+                      MaterialPageRoute(builder: (context) => WelcomeView())),
                 });
       } on FirebaseAuthException catch (error) {
         switch (error.code) {

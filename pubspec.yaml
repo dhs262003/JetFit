@@ -94,10 +94,13 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
 
-  # fonts:
+  fonts:
   #   - family: Bebas
   #     fonts:
   #       - asset: assets/fonts/Bebas/Bebas Neue-Regular.ttf
+      - family: MyFlutterApp
+        fonts:
+          - asset: fonts/MyFlutterApp.ttf
   
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

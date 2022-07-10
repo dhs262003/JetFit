@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-
+import 'package:spotify_api_app/screens/app.dart';
 import '../../core.dart';
 
 class WelcomeView extends StatelessWidget {
@@ -64,7 +63,10 @@ class WelcomeView extends StatelessWidget {
                   ),
                   SizedBox(height: 30),
                   TextButton(
-                    onPressed: () => Get.toNamed(Routes.TRAIN),
+                    // onPressed: TrainApp,
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Clicked()));
+                    },
                     child: Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(25),
@@ -84,29 +86,7 @@ class WelcomeView extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(height: 10),
-                  // TextButton(
-                  //   onPressed: () => Get.toNamed(Routes.TRAIN),
-                  //   child: Container(
-                  //     decoration: BoxDecoration(
-                  //         borderRadius: BorderRadius.circular(25),
-                  //         color: Colors.transparent,
-                  //         border: Border.all(width: 2, color: Colors.white)),
-                  //     height: 50,
-                  //     width: MediaQuery.of(context).size.width * 0.7,
-                  //     child: Center(
-                  //       child: Text(
-                  //         "Login",
-                  //         style: TextStyle(
-                  //           color: Colors.white,
-                  //           fontSize: 20,
-                  //           fontWeight: FontWeight.bold,
-                  //         ),
-                  //       ),
-                  //     ),
-                  //   ),
-                  // ),
-                  SizedBox(height: 27),
+                  SizedBox(height: 10),SizedBox(height: 27),
                 ],
               ),
             ),
@@ -114,5 +94,14 @@ class WelcomeView extends StatelessWidget {
         ],
       ),
     );
+  }
+}
+
+class Clicked extends StatelessWidget {
+  const Clicked({ Key? key }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MyApp();
   }
 }

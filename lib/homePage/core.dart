@@ -1,5 +1,3 @@
-export 'models/xcore.dart';
-export 'pages/xcore.dart';
-export 'routes/app_pages.dart';
-export 'services/xcore.dart';
-export 'shared/xcore.dart';
+export 'pages/colors.dart';
+export 'pages/started/welcome_view.dart';
+export 'pages/redirected/trains.dart';

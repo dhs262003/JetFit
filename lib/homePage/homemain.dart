@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:get/get.dart';
 import 'core.dart';
 
 void main() {
@@ -13,7 +12,7 @@ void main() {
 class HomeApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
+    return MaterialApp(
       title: 'JetFit', //Aqua Workout
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -23,11 +22,10 @@ class HomeApp extends StatelessWidget {
         ),
       ),
       debugShowCheckedModeBanner: false,
-      opaqueRoute: Get.isOpaqueRouteDefault,
-      popGesture: Get.isPopGestureEnable,
-      transitionDuration: Duration(milliseconds: 230),
-      initialRoute: AppPages.INITIAL,
-      getPages: AppPages.routes,
+      // opaqueRoute: Get.isOpaqueRouteDefault,
+      // popGesture: Get.isPopGestureEnable,
+      // transitionDuration: Duration(milliseconds: 230),
+      home: TrainApp(),
     );
   }
 }
