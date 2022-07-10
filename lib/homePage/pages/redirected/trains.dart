@@ -31,7 +31,7 @@ class _MyHomePageState extends State<MyHomePage> {
   List<Widget> itemsData = [];
 
   void getPostsData() {
-    List<dynamic> responseList = FOOD_DATA;
+    List<dynamic> responseList = TRAIN_DATA;
     List<Widget> listItems = [];
     responseList.forEach((post) {
       listItems.add(Container(
@@ -140,7 +140,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             debugPrint("$index clicked");
                             Navigator.push(
                               context, MaterialPageRoute(
-                                builder: (context) => foodPage(index),
+                                builder: (context) => trainingPage(index),
                               )
                             );
                           },
