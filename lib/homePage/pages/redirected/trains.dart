@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:spotify_api_app/food/linkedPage.dart';
+import 'clicked/clickedPage.dart';
 import 'constants.dart';
 
-class FoodApp extends StatelessWidget {
+class TrainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -52,16 +52,12 @@ class _MyHomePageState extends State<MyHomePage> {
                       post["name"],
                       style: const TextStyle(color: Colors.white , fontSize: 28, fontWeight: FontWeight.bold),
                     ),
-                    Text(
-                      post["details"],
-                      style: const TextStyle(fontSize: 17, color: Color.fromARGB(255, 255, 203, 203)),//Color.fromARGB(255, 255, 236, 236)
-                    ),
                     SizedBox(
-                      height: 10,
+                      height: 25,
                     ),
                     Text(
-                      "\Calories : ${post["cal"]}",
-                      style: const TextStyle(fontSize: 25, color: Color.fromARGB(255, 255, 255, 255), fontWeight: FontWeight.bold),
+                      "\difficulty Level : ${post["difficulty"]}",
+                      style: const TextStyle(fontSize: 18, color: Color.fromRGBO(251, 192, 45, 1), fontWeight: FontWeight.bold),
                     )
                   ],
                 ),
@@ -97,24 +93,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return SafeArea(
       child: Scaffold(
         backgroundColor: Color.fromARGB(255, 0, 23, 69),
-        appBar: AppBar(
-          elevation: 0,
-          backgroundColor: Color.fromARGB(255, 0, 23, 69),//Color.fromARGB(255, 101, 101, 101),//Colors.white,
-          leading: Icon(
-            Icons.menu,
-            color: Colors.white,
-          ),
-          actions: <Widget>[
-            IconButton(
-              icon: Icon(Icons.search, color: Colors.white),
-              onPressed: () {},
-            ),
-            IconButton(
-              icon: Icon(Icons.person, color: Colors.white),
-              onPressed: () {},
-            )
-          ],
-        ),
+        
         body: Container(
           height: size.height,
           child: Column(

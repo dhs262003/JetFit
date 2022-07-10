@@ -1,10 +1,12 @@
 // ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
 import 'package:spotify_api_app/food/foods.dart';
-import 'package:spotify_api_app/screens/home_page.dart';
+
 import 'package:spotify_api_app/screens/search.dart';
 import 'package:spotify_api_app/timer/jetfit_timer.dart';
+import '../homePage/homemain.dart';
 import '../models/music.dart';
+import '../my_flutter_app_icons.dart';
 import 'home.dart';
 import 'package:audioplayers/audioplayers.dart';
 
@@ -59,7 +61,8 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-    Tabs = [HomePage(), FoodApp(), JetFitTimer(), Home(createMiniPlayer), AboutUs()];
+    // Tabs = [HomePage(), FoodApp(), JetFitTimer(), Home(createMiniPlayer), AboutUs()];HomeApp()
+    Tabs = [HomeApp(), FoodApp(), JetFitTimer(), Home(createMiniPlayer), AboutUs()];
   }
 
   @override
@@ -84,8 +87,9 @@ class _MyAppState extends State<MyApp> {
             backgroundColor: Colors.grey[700],
             items: const [
               BottomNavigationBarItem(
-                icon: Icon(Icons.home_outlined, color: Colors.white), 
-                label: 'Home'
+                // icon: Icon(Icons.home_outlined, color: Colors.white),dumbbell
+                icon: Icon(MyFlutterApp.dumbbell,color: Colors.white), 
+                label: 'Training'
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.fastfood_outlined, color: Colors.white), 
@@ -97,7 +101,7 @@ class _MyAppState extends State<MyApp> {
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.music_note_outlined, color: Colors.white), 
-                label: 'Music'
+                label: 'Music library'
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.info_outline_rounded, color: Colors.white), 

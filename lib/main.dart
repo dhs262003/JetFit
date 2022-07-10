@@ -20,7 +20,7 @@ class RunMainApp extends StatelessWidget {
     debugShowCheckedModeBanner: false,
     // home: MyApp(),
     home: AnimatedSplashScreen(
-            duration: 3000,
+            duration: 2000,
             splash: 'assets/icon.png',
             splashIconSize: double.infinity,
             nextScreen: MyLoginApp(),
