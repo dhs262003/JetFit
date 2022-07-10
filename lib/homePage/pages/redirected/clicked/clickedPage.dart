@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:spotify_api_app/my_flutter_app_icons.dart';
 
 //https://drive.google.com/uc?export=view&id=
-foodPage(int clickedIndex){
+trainingPage(int clickedIndex){
   if(clickedIndex == 0 ){return Idx0();}
   else if(clickedIndex == 1){return Idx1();}
   else if(clickedIndex == 2){return Idx2();}

@@ -1,4 +1,4 @@
-const FOOD_DATA = [
+const TRAIN_DATA = [
   {"name":"Leg Hamstring Curls",
     "difficulty":"3/5",
   },
